@@ -1,0 +1,162 @@
+.footer {
+    background-color: $c-primary;
+}
+
+.footer-nav {
+    height: 414px;
+    background-image: url(/images/kari-shea-cpEO3HoKdKM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding-top: 40px;
+
+    &__list {
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        font-size: 20px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        letter-spacing: $lettspace-base;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        padding: 10px 20px;
+    }
+
+    &__logo {
+        width: 260px;
+        display: none;
+    }
+
+}
+
+
+.footer-contact {
+    background-color: $c-primary;
+    height: 414px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 30% 30% 1fr;
+
+    &__title-contact {
+        display: none;
+        color: white;
+    }
+
+    &__title-adress {
+        display: none;
+        color: white;
+    }
+
+    &__item {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin: 0;
+    }
+
+    &__contact {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    &__adress {
+        color: white;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    &__icons {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__link {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-width: 918px) {
+    .footer {
+        justify-content: center;
+    }
+
+    .footer-nav {
+        height: 600px;
+
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__logo {
+            display: inline;
+            margin-top: 50px;
+        }
+    }
+
+    .footer-contact {
+        height: auto;
+        grid-template-columns: 20px repeat(3, auto) 20px;
+        grid-template-rows: 40px 100px 40px;
+        align-items: flex-start;
+        max-width: 1270px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__contact {
+            grid-area: 2 / 2 / 3 / 3;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            column-gap: 10px;
+            justify-self: start;
+        }
+
+        &__title-contact {
+            display: inline;
+            grid-column: 1 / 2;
+            text-align: right;
+        }
+
+        &__item {
+            grid-column: 2 / 3;
+            text-align: left;
+        }
+
+        &__adress {
+            grid-area: 2 / 3 / 3 / 4;
+            display: grid;
+            column-gap: 10px;
+        }
+
+        &__title-adress {
+            display: inline;
+            text-align: right;
+        }
+
+        &__icons {
+            grid-area: 2 / 4 / 3 / 5;
+            align-self: flex-start;
+            justify-self: end;
+        }
+
+        &__link {
+            padding: 5px 0 0 36px;
+
+        }
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "calendar.svg",
+        "title": "Čas příjezdu a&nbsp;odjezdu",
+        "description": "Můžete se u&nbsp;nás ubytovat od&nbsp;15.00. Až příjde čas odjezdu, je třeba vše sbalit do&nbsp;11.00, abychom měli čas připravit se na další&nbsp;hosty."
+    },
+    {
+        "icon": "no-smoking.svg",
+        "title": "Nekuřácké pokoje",
+        "description": "Naše pokoje a&nbsp;celý pozemek jsou výhradně nekuřácké. Medvědovi to nedělá moc dobře.&nbsp;Brum."
+    },
+    {
+        "icon": "wifi.svg",
+        "title": "Wi-fi",
+        "description": "Na celém pozemku apartmánů se můžete připojit do naší čiperné WI-FI sítě s&nbsp;rychlostí stahování 250&nbsp;Mb/s a&nbsp;odesíláním dat&nbsp;25&nbsp;Mb/s."
+    },
+    {
+        "icon": "air-conditioner.svg",
+        "title": "Klimatizace",
+        "description": "Všechny naše pokoje jsou klimatizované. Pro Vaše pohodlí, za každého počasí a&nbsp;zvláště v&nbsp;horkém&nbsp;létě."
+    },
+    {   
+        "icon": "tea.svg",
+        "title": "Kuchyně",
+        "description": "Každý apartmán disponuje plně vybavenou kuchyní, kde si můžete spolu s&nbsp;rodinou, či přáteli nachystat snídani, oběd i&nbsp;večeři."
+    },
+    {
+        "icon": "parking.svg",
+        "title": "Parkování a&nbsp;úschovna&nbsp;kol",
+        "description": "Medvěd má krytou garáž, kam se vlezou až 4&nbsp;auta. Spolu s&nbsp;nimi jsou tu i&nbsp;stojany pro odložení jízdních&nbsp;kol"
+    }
+]

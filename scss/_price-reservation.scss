@@ -1,0 +1,45 @@
+
+.price-reservation {
+    margin-top: 20px;
+}
+
+.price-list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+    gap: 40px;
+
+
+    @media screen and (min-width: 401px) {
+        padding: 0 40px;
+    }
+
+    &__table {
+        border-spacing: 0;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__span {
+        font-weight: 400;
+    }
+
+}
+
+th,
+td {
+    height: 50px;
+}
+
+th {
+    border-bottom: 2px solid $c-primary;
+}
+
+td {
+   border-bottom: 1px solid $c-primary;
+}
+
+.cell-colored {
+    color: $c-primary;
+}

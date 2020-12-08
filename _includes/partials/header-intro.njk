@@ -1,0 +1,17 @@
+<header class="header-intro">
+    <div class="header-intro__content">
+        <img class="header-intro__logo" src="/images/icon_logo.svg" alt="Logo Apartmány Medvěd">
+
+        <nav class="languages">
+            <ul class="languages__list">
+                <li class="languages__item"><a class="languages__link {% if language === 'cz' %}languages__link--disabled{% endif %}" href="#">CZ</a></li>
+                <li class="languages__item"><a class="languages__link" href="#">EN</a></li>
+                <li class="languages__item"><a class="languages__link" href="#">DE</a></li>
+            </ul>
+        </nav>
+
+        {% include "partials/menu.njk" %}
+
+        <h1 class="header-intro__headline">{{headline}}</h1>
+    </div>
+</header>

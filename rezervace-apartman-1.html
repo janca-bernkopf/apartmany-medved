@@ -1,0 +1,37 @@
+---
+layout: layouts/sites
+title: Apartmán 1
+menu: rezervace-form
+---
+
+<section class="price-reservation" id="formular-1">
+
+    <div class="price-list">
+        <table class="price-list__table">
+            <tr><th colspan="2">Apartmán 1 <span class="price-list__span">| 4 + 2 | Cena za 1 noc</span></th></tr>
+            <tr><td class="cell-colored">1 osoba</td><td>2&nbsp;500 Kč</td></tr>
+            <tr><td class="cell-colored">2 osoby</td><td>2&nbsp;800 Kč</td></tr>
+            <tr><td class="cell-colored">3 osoby</td><td>3&nbsp;100 Kč</td></tr>
+            <tr><td class="cell-colored">4 osoby</td><td>3&nbsp;400 Kč</td></tr>
+            <tr><td class="cell-colored">5 osob</td><td>3&nbsp;700 Kč</td></tr>
+            <tr><td class="cell-colored">6 osob</td><td>4&nbsp;000 Kč</td></tr>
+        </table>
+    </div>
+</section>
+
+{% include "partials/form-r-top.njk" %}
+
+            <div class="form__field">
+                <label class="form__label" for="persons">Počet osob <span class="required">*</span></label>
+                <select class="form__input form__input--shorter" name="persons" id="persons" required>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            
+{% include "partials/form-bottom.njk" %}

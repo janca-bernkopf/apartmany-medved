@@ -1,0 +1,7 @@
+<nav class="menu {% if menu === 'intro' %}menu--intro{% endif %}">
+    <ul class="menu__list">
+        {% for navitem in navigation%}
+        <li class="menu__item"><a class="menu__link {% if menu === 'intro' %}menu__link--intro{% endif %} {% if menu === navitem.navmenu %}menu__link--intro-disabled{% endif %}" href="{{navitem.navlink}}">{{navitem.navtitle}}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

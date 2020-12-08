@@ -1,0 +1,37 @@
+<form action="http://formular.itgirls.cz" method="POST" class="form">
+    <h2 class="form__title">Rezervace</h2>
+    <div class="form__set">
+
+        <div  class="form__calendar">
+            <a class="form__link" href="https://calendar.google.com/calendar/embed?src=r4gk1ul6iu6tgt7m3e03j7rj78%40group.calendar.google.com&ctz=Europe%2FPrague" target="_blank">Obsazenost apartmánů</a>
+        </div>
+
+        <div class="form__inputs">
+
+            <div class="form__field">
+                <label class="form__label" for="name">Jméno a Příjmení <span class="required">*</span></label>
+                <input class="form__input" type="text" name="jmeno" id="jmeno" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label" for="email">E-mail <span class="required">*</span></label>
+                <input class="form__input" type="email" name="email" id="email" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label" for="telefon">Telefon</label>
+                <input class="form__input" type="tel" name="telefon" value="+420 " id="telefon">
+            </div>
+            <div class="form__field">
+                <label class="form__label" for="type">Typ apartmánu</label>
+                <input class="form__input" type="text" name="type" value="{% if menu === 'rezervace-form' %}{{title}}{% endif %}" id="type" disabled>
+                <input type="hidden" name="type" value="Apartmán 1">
+            </div>
+            <div class="form__inputs-shorts">
+                <div class="form__field">
+                    <label class="form__label" for="arivall">Den příjezdu <span class="required">*</span></label>
+                    <input class="form__input form__input--short" type="date" name="arivall" id="arrival" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="departure">Den odjezdu <span class="required">*</span></label>
+                    <input class="form__input form__input--short" type="date" name="departure" id="departure" required>
+                </div>
+            </div>

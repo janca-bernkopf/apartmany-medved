@@ -1,0 +1,81 @@
+.form {
+    margin-bottom: 80px;
+    padding: 0 20px;
+
+    &__txt {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        max-width: 900px;
+        @include margin-auto-center;
+        color: $c-primary;
+
+    }
+
+    @media screen and (min-width: 401px) {
+        padding: 0 40px;
+    }
+
+    &__calendar {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        color: $c-secondary;
+    }
+
+    &__set {
+        @include margin-auto-center;
+        max-width: 940px;
+        text-align: left;
+    }
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(auto, 460px));
+        column-gap: 20px;        
+    }
+
+    &__label {
+            display: block;
+            padding: 5px 0;
+        }
+
+    &__label {
+        color: $c-primary;
+    }
+
+    &__input {
+        width: 100%;
+        height: 50px;
+        border: 2px solid $c-primary;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 20px; 
+    }
+
+    &__inputs-shorts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 180px);
+        column-gap: 20px;  
+    }
+    
+    &__input--shorter {
+        width: 90px;
+    }
+
+    &__textarea {
+        width: 100%;
+        border: 2px solid $c-primary;
+        font-size: 16px;
+        font-family: $font-base;
+        padding: 10px;
+    }
+
+    .required {
+        color: $c-secondary;
+        font-size: 12px;
+        vertical-align: text-top;
+    }
+
+}

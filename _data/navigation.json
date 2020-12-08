@@ -1,0 +1,22 @@
+[
+    {
+        "navtitle": "O Medvědovi",
+        "navmenu": "intro",
+        "navlink": "/"
+    },
+    {
+        "navtitle": "Apartmány",
+        "navmenu": "apartmany",
+        "navlink": "/apartmany"
+    },
+    {
+        "navtitle": "Ceník a rezervace",
+        "navmenu": "rezervace",
+        "navlink": "/cenik-a-rezervace"
+    },
+    {
+        "navtitle": "Kontakt",
+        "navmenu": "kontakt",
+        "navlink": "/kontakt"
+    }
+]
