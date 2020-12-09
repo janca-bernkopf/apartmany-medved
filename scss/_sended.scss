@@ -1,0 +1,39 @@
+.sended {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__txt {
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__cta {
+        @include margin-auto-center;
+    }
+
+    &__cta-item {
+        display: block;
+        width: 260px;
+        text-decoration: none;
+        color: $c-primary;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 10px  20px;
+        border: 2px solid $c-primary;
+
+        &:hover {
+            background-color: $c-primary;
+            border: 2px solid $c-primary;
+            color: $c-bg;
+        }
+
+    }
+}

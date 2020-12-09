@@ -1000,6 +1000,53 @@ td {
   margin-bottom: -10px;
 }
 
+.sended {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sended__title {
+  margin-bottom: 0;
+}
+
+.sended__txt {
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sended__cta {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sended__cta-item {
+  display: block;
+  width: 260px;
+  text-decoration: none;
+  color: #5DC0A3;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px  20px;
+  border: 2px solid #5DC0A3;
+}
+
+.sended__cta-item:hover {
+  background-color: #5DC0A3;
+  border: 2px solid #5DC0A3;
+  color: #FFFFFF;
+}
+
 .footer {
   background-color: #5DC0A3;
 }
