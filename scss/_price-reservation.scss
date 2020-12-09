@@ -43,3 +43,7 @@ td {
 .cell-colored {
     color: $c-primary;
 }
+
+.cell-empty {
+    border-bottom: none;
+}

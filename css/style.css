@@ -253,6 +253,15 @@ body {
   margin-bottom: 20px;
 }
 
+.form__selects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (140px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 140px);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
 .form__inputs-shorts {
   display: -ms-grid;
   display: grid;
@@ -917,6 +926,10 @@ td {
 
 .cell-colored {
   color: #5DC0A3;
+}
+
+.cell-empty {
+  border-bottom: none;
 }
 
 .contacts {

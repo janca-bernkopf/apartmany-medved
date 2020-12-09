@@ -10,32 +10,27 @@ menu: rezervace
     <div class="price-list">
         <table class="price-list__table">
             <tr><th colspan="2">Apartmán 1 <span class="price-list__span">| 4 + 2</span></th></tr>
-            <tr><td class="cell-colored">1 osoba</td><td>2&nbsp;500 Kč</td></tr>
-            <tr><td class="cell-colored">2 osoby</td><td>2&nbsp;800 Kč</td></tr>
-            <tr><td class="cell-colored">3 osoby</td><td>3&nbsp;100 Kč</td></tr>
-            <tr><td class="cell-colored">4 osoby</td><td>3&nbsp;400 Kč</td></tr>
-            <tr><td class="cell-colored">5 osob</td><td>3&nbsp;700 Kč</td></tr>
-            <tr><td class="cell-colored">6 osob</td><td>4&nbsp;000 Kč</td></tr>
+            {% for tableprise in priseone %}
+            <tr><td class="cell-colored">{{tableprise.osoba}}</td><td>{{tableprise.cena}} Kč</td></tr>
+            {% endfor %}
         </table>
 
         <table class="price-list__table">
             <tr><th colspan="2">Apartmán 2 <span class="price-list__span">| 4 + 2</span></th></tr>
-            <tr><td class="cell-colored">1 osoba</td><td>2&nbsp;200 Kč</td></tr>
-            <tr><td class="cell-colored">2 osoby</td><td>2&nbsp;500 Kč</td></tr>
-            <tr><td class="cell-colored">3 osoby</td><td>2&nbsp;800 Kč</td></tr>
-            <tr><td class="cell-colored">4 osoby</td><td>3&nbsp;100 Kč</td></tr>
-            <tr><td class="cell-colored">5 osob</td><td>3&nbsp;400 Kč</td></tr>
-            <tr><td class="cell-colored">6 osob</td><td>3&nbsp;700 Kč</td></tr>
+            {% for tableprise in prisetwo %}
+            <tr><td class="cell-colored">{{tableprise.osoba}}</td><td>{{tableprise.cena}} Kč</td></tr>
+            {% endfor %}
         </table>
 
         <table class="price-list__table">
             <tr><th colspan="2">Apartmán 3 <span class="price-list__span">| 2 + 2</span></th></tr>
-            <tr><td class="cell-colored">1 osoba</td><td>2&nbsp;000 Kč</td></tr>
-            <tr><td class="cell-colored">2 osoby</td><td>2&nbsp;300 Kč</td></tr>
-            <tr><td class="cell-colored">3 osoby</td><td>2&nbsp;600 Kč</td></tr>
-            <tr><td class="cell-colored">4 osoby</td><td>2&nbsp;900 Kč</td></tr>
-            <tr><td class="cell-colored"></td><td></td></tr>
-            <tr><td class="cell-colored"></td><td></td></tr>
+            {% for tableprise in prisethree %}
+            <tr><td class="cell-colored">{{tableprise.osoba}}</td><td>{{tableprise.cena}} Kč</td></tr>
+            {% endfor %}
+            <tr><td class="cell-colored cell-empty"></td><td class="cell-empty"></td></tr>
+            <tr><td class="cell-colored cell-empty"></td><td class="cell-empty"></td></tr>
+
+
         </table>
     </div>
 
@@ -64,14 +59,41 @@ menu: rezervace
                 <label class="form__label" for="telefon">Telefon</label>
                 <input class="form__input" type="tel" name="telefon" value="+420 " id="telefon">
             </div>
-            <div class="form__field">
-                <label class="form__label" for="type">Typ apartmánu <span class="required">*</span></label>
-                <select class="form__input" name="type" id="type" required>
-                    <option value=""></option>
-                    <option value="Apartmán 1">Apartmán 1</option>
-                    <option value="Apartmán 2">Apartmán 2</option>
-                    <option value="Apartmán 3">Apartmán 3</option>
-                </select>
+            <div class="form__selects">
+                <div class="form__field">
+                    <label class="form__label" for="apartment1">Apartmán 1</label>
+                    <select class="form__input" name="apartment1" id="apartment1">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="apartment1">Apartmán 2</label>
+                    <select class="form__input" name="apartment2" id="apartment2">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="apartment1">Apartmán 3</label>
+                    <select class="form__input" name="apartment3" id="apartment3">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
             </div>
             <div class="form__inputs-shorts">
                 <div class="form__field">
@@ -82,18 +104,6 @@ menu: rezervace
                     <label class="form__label" for="departure">Den odjezdu <span class="required">*</span></label>
                     <input class="form__input form__input--short" type="date" name="departure" id="departure" required>
                 </div>
-            </div>
-            <div class="form__field">
-                <label class="form__label" for="persons">Počet osob <span class="required">*</span></label>
-                <select class="form__input form__input--shorter" name="persons" id="persons" required>
-                    <option value=""></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
             </div>
                    
 {% include "partials/form-bottom.njk" %}

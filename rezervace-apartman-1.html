@@ -9,12 +9,9 @@ menu: rezervace-form
     <div class="price-list">
         <table class="price-list__table">
             <tr><th colspan="2">Apartmán 1 <span class="price-list__span">| 4 + 2 | Cena za 1 noc</span></th></tr>
-            <tr><td class="cell-colored">1 osoba</td><td>2&nbsp;500 Kč</td></tr>
-            <tr><td class="cell-colored">2 osoby</td><td>2&nbsp;800 Kč</td></tr>
-            <tr><td class="cell-colored">3 osoby</td><td>3&nbsp;100 Kč</td></tr>
-            <tr><td class="cell-colored">4 osoby</td><td>3&nbsp;400 Kč</td></tr>
-            <tr><td class="cell-colored">5 osob</td><td>3&nbsp;700 Kč</td></tr>
-            <tr><td class="cell-colored">6 osob</td><td>4&nbsp;000 Kč</td></tr>
+            {% for tableprise in priseone %}
+            <tr><td class="cell-colored">{{tableprise.osoba}}</td><td>{{tableprise.cena}} Kč</td></tr>
+            {% endfor %}
         </table>
     </div>
 </section>

@@ -1,0 +1,26 @@
+[
+    {
+        "osoba": "1 osoba",
+        "cena": "2 500"        
+    },
+    {
+        "osoba": "2 osoby",
+        "cena": "2 800"       
+    },
+    {
+        "osoba": "3 osoby",
+        "cena": "3 100"      
+    },
+    {
+        "osoba": "4 osoby",
+        "cena": "3 400"       
+    },
+    {
+        "osoba": "5 osob",
+        "cena": "3 700"     
+    },
+    {
+        "osoba": "6 osob",
+        "cena": "4 000"     
+    }
+]

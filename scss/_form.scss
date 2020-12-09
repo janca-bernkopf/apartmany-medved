@@ -54,6 +54,12 @@
         margin-bottom: 20px; 
     }
 
+    &__selects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 140px);
+        column-gap: 20px;
+    }
+
     &__inputs-shorts {
         display: grid;
         grid-template-columns: repeat(auto-fit, 180px);
